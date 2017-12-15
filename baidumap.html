@@ -1,19 +1,29 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-    <meta name="keywords" content="ÆóÒµÎ»ÖÃ" />
-    <meta name="description" content="ÆóÒµÎ»ÖÃ" />
-    <title>ÆóÒµÎ»ÖÃ</title>
+    <meta name="keywords" content="ä¼ä¸šä½ç½®" />
+    <meta name="description" content="ä¼ä¸šä½ç½®" />
+    <title>ä¼ä¸šä½ç½®</title>
     <link rel="stylesheet" type="text/css" href="css/my-css.css">
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!--ÒıÓÃ°Ù¶ÈµØÍ¼API-->
+
+    <!--å¼•ç”¨ç™¾åº¦åœ°å›¾API-->
     <style type="text/css">
         html,body{margin:0;padding:0;}
         .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
         .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
     </style>
     <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/myjs.js" type="text/javascript" language="javascript"></script>
 </head>
 
 <body>
@@ -21,20 +31,20 @@
     <!--<div class="top_menuBg"></div>-->
     <div class="topBarArea">
         <div class="top_menu_left clear">
-            <a href="#">µÇÂ¼</a>
+            <a href="#">ç™»å½•</a>
             <em>|</em>
-            <a href="#">Ãâ·Ñ×¢²á</a>
+            <a href="#">å…è´¹æ³¨å†Œ</a>
         </div>
         <div class="top_menu_right clear">
-            <a onclick="SetHome(window.location)" href="javascript:void(0)">ÉèÎªÊ×Ò³</a>
+            <a onclick="SetHome(window.location)" href="javascript:void(0)">è®¾ä¸ºé¦–é¡µ</a>
             <em>|</em>
-            <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">¼ÓÈëÊÕ²Ø</a>
+            <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">åŠ å…¥æ”¶è—</a>
             <em>|</em>
-            <a href="#">ÔÚÏßÁôÑÔ</a>
+            <a href="#">åœ¨çº¿ç•™è¨€</a>
             <em>|</em>
-            <a href="baidumap.html">ÆóÒµÎ»ÖÃ</a>
+            <a href="baidumap.html">ä¼ä¸šä½ç½®</a>
             <em>|</em>
-            <a href="#">ÊÖ»úÕ¾</a>
+            <a href="#">æ‰‹æœºç«™</a>
         </div>
     </div>
 </div>
@@ -53,15 +63,24 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse img-responsive">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Ê×Ò³</a></li>
-                    <li><a href="#about"> ¼Ò¾ß²úÆ·</a></li>
-                    <li><a href="#contact">Éè¼ÆÍÅ¶Ó</a></li>
-                    <li><a href="#contact">¹ØÓÚÎÒÃÇ</a></li>
+                    <li class="active"><a href="index.html">é¦–é¡µ</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¸ü¶à <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">å®¶å…·äº§å“ <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">ÈË²ÅÕĞÆ¸</a></li>
-                            <li><a href="#">ÆóÒµÎ»ÖÃ</a></li>
+                            <li><a href="Restaurant-furniture.html">é¤å…å®¶å…·</a></li>
+                            <li><a href="Living-room-furniture.html">å®¢å…å®¶å…·</a></li>
+                            <li><a href="Bedroom-furniture.html">å§å®¤å®¶å…·</a></li>
+                            <li><a href="Study-furniture.html">ä¹¦æˆ¿å®¶å…·</a></li>
+                            <li><a href="Children-furniture.html">å„¿ç«¥å®¶å…·</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">è®¾è®¡å›¢é˜Ÿ</a></li>
+                    <li><a href="About-us/Company-profile.html">å…³äºæˆ‘ä»¬</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">æ›´å¤š <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">äººæ‰æ‹›è˜</a></li>
+                            <li><a href="#">ä¼ä¸šä½ç½®</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -70,11 +89,11 @@
     </nav>
 </div>
 
-<!--°Ù¶ÈµØÍ¼ÈİÆ÷-->
+<!--ç™¾åº¦åœ°å›¾å®¹å™¨-->
 <div class="CModulePC" style="width: 1150px;margin: 0 auto;border-color: #CCC;border-width: 1px; border-style: solid;">
     <div class="MoHead">
 
-        <strong class="qiyeaddress"><em> | </em><a>ÆóÒµÎ»ÖÃ</a></strong>
+        <strong class="qiyeaddress"><em> | </em><a>ä¼ä¸šä½ç½®</a></strong>
     </div>
     <div style="width:1149px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
 </div>
@@ -85,12 +104,12 @@
         <div class="footerCon">
             <!--FOOTER NAV START-->
             <div class="footerNav" id="footer_nav">
-                <a href="#">¹ØÓÚÎÒÃÇ</a> <em>|</em>
-                <a href="#">¾­µä°¸Àı</a> <em>|</em>
-                <a href="#">ĞÂÎÅ¶¯Ì¬</a> <em>|</em>
-                <a href="#">·şÎñÏîÄ¿</a> <em>|</em>
-                <a href="#">×ÉÑ¯ÍÅ¶Ó</a> <em>|</em>
-                <a href="#">ÁªÏµÎÒÃÇ</a>
+                <a href="#">å…³äºæˆ‘ä»¬</a> <em>|</em>
+                <a href="#">ç»å…¸æ¡ˆä¾‹</a> <em>|</em>
+                <a href="#">æ–°é—»åŠ¨æ€</a> <em>|</em>
+                <a href="#">æœåŠ¡é¡¹ç›®</a> <em>|</em>
+                <a href="#">å’¨è¯¢å›¢é˜Ÿ</a> <em>|</em>
+                <a href="#">è”ç³»æˆ‘ä»¬</a>
             </div>
             <div class="copyright" id="copyright">
                 <p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
@@ -103,47 +122,47 @@
 </div>
 </body>
 <script type="text/javascript">
-    //´´½¨ºÍ³õÊ¼»¯µØÍ¼º¯Êı£º
+    //åˆ›å»ºå’Œåˆå§‹åŒ–åœ°å›¾å‡½æ•°ï¼š
     function initMap(){
-        createMap();//´´½¨µØÍ¼
-        setMapEvent();//ÉèÖÃµØÍ¼ÊÂ¼ş
-        addMapControl();//ÏòµØÍ¼Ìí¼Ó¿Ø¼ş
-        addMarker();//ÏòµØÍ¼ÖĞÌí¼Ómarker
+        createMap();//åˆ›å»ºåœ°å›¾
+        setMapEvent();//è®¾ç½®åœ°å›¾äº‹ä»¶
+        addMapControl();//å‘åœ°å›¾æ·»åŠ æ§ä»¶
+        addMarker();//å‘åœ°å›¾ä¸­æ·»åŠ marker
     }
 
-    //´´½¨µØÍ¼º¯Êı£º
+    //åˆ›å»ºåœ°å›¾å‡½æ•°ï¼š
     function createMap(){
-        var map = new BMap.Map("dituContent");//ÔÚ°Ù¶ÈµØÍ¼ÈİÆ÷ÖĞ´´½¨Ò»¸öµØÍ¼
-        var point = new BMap.Point(120.164329,30.17656);//¶¨ÒåÒ»¸öÖĞĞÄµã×ø±ê
-        map.centerAndZoom(point,18);//Éè¶¨µØÍ¼µÄÖĞĞÄµãºÍ×ø±ê²¢½«µØÍ¼ÏÔÊ¾ÔÚµØÍ¼ÈİÆ÷ÖĞ
-        window.map = map;//½«map±äÁ¿´æ´¢ÔÚÈ«¾Ö
+        var map = new BMap.Map("dituContent");//åœ¨ç™¾åº¦åœ°å›¾å®¹å™¨ä¸­åˆ›å»ºä¸€ä¸ªåœ°å›¾
+        var point = new BMap.Point(120.164329,30.17656);//å®šä¹‰ä¸€ä¸ªä¸­å¿ƒç‚¹åæ ‡
+        map.centerAndZoom(point,18);//è®¾å®šåœ°å›¾çš„ä¸­å¿ƒç‚¹å’Œåæ ‡å¹¶å°†åœ°å›¾æ˜¾ç¤ºåœ¨åœ°å›¾å®¹å™¨ä¸­
+        window.map = map;//å°†mapå˜é‡å­˜å‚¨åœ¨å…¨å±€
     }
 
-    //µØÍ¼ÊÂ¼şÉèÖÃº¯Êı£º
+    //åœ°å›¾äº‹ä»¶è®¾ç½®å‡½æ•°ï¼š
     function setMapEvent(){
-        map.enableDragging();//ÆôÓÃµØÍ¼ÍÏ×§ÊÂ¼ş£¬Ä¬ÈÏÆôÓÃ(¿É²»Ğ´)
-        map.enableScrollWheelZoom();//ÆôÓÃµØÍ¼¹öÂÖ·Å´óËõĞ¡
-        map.enableDoubleClickZoom();//ÆôÓÃÊó±êË«»÷·Å´ó£¬Ä¬ÈÏÆôÓÃ(¿É²»Ğ´)
-        map.enableKeyboard();//ÆôÓÃ¼üÅÌÉÏÏÂ×óÓÒ¼üÒÆ¶¯µØÍ¼
+        map.enableDragging();//å¯ç”¨åœ°å›¾æ‹–æ‹½äº‹ä»¶ï¼Œé»˜è®¤å¯ç”¨(å¯ä¸å†™)
+        map.enableScrollWheelZoom();//å¯ç”¨åœ°å›¾æ»šè½®æ”¾å¤§ç¼©å°
+        map.enableDoubleClickZoom();//å¯ç”¨é¼ æ ‡åŒå‡»æ”¾å¤§ï¼Œé»˜è®¤å¯ç”¨(å¯ä¸å†™)
+        map.enableKeyboard();//å¯ç”¨é”®ç›˜ä¸Šä¸‹å·¦å³é”®ç§»åŠ¨åœ°å›¾
     }
 
-    //µØÍ¼¿Ø¼şÌí¼Óº¯Êı£º
+    //åœ°å›¾æ§ä»¶æ·»åŠ å‡½æ•°ï¼š
     function addMapControl(){
-        //ÏòµØÍ¼ÖĞÌí¼ÓËõ·Å¿Ø¼ş
+        //å‘åœ°å›¾ä¸­æ·»åŠ ç¼©æ”¾æ§ä»¶
         var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
         map.addControl(ctrl_nav);
-        //ÏòµØÍ¼ÖĞÌí¼ÓËõÂÔÍ¼¿Ø¼ş
+        //å‘åœ°å›¾ä¸­æ·»åŠ ç¼©ç•¥å›¾æ§ä»¶
         var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
         map.addControl(ctrl_ove);
-        //ÏòµØÍ¼ÖĞÌí¼Ó±ÈÀı³ß¿Ø¼ş
+        //å‘åœ°å›¾ä¸­æ·»åŠ æ¯”ä¾‹å°ºæ§ä»¶
         var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
         map.addControl(ctrl_sca);
     }
 
-    //±ê×¢µãÊı×é
-    var markerArr = [{title:"ÎÒµÄ±ê¼Ç",content:"ÕâÀïÕâÀï",point:"120.164333|30.177606",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    //æ ‡æ³¨ç‚¹æ•°ç»„
+    var markerArr = [{title:"æˆ‘çš„æ ‡è®°",content:"è¿™é‡Œè¿™é‡Œ",point:"120.164333|30.177606",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
     ];
-    //´´½¨marker
+    //åˆ›å»ºmarker
     function addMarker(){
         for(var i=0;i<markerArr.length;i++){
             var json = markerArr[i];
@@ -185,18 +204,22 @@
             })()
         }
     }
-    //´´½¨InfoWindow
+    //åˆ›å»ºInfoWindow
     function createInfoWindow(i){
         var json = markerArr[i];
         var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
         return iw;
     }
-    //´´½¨Ò»¸öIcon
+    //åˆ›å»ºä¸€ä¸ªIcon
     function createIcon(json){
         var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
 
-    initMap();//´´½¨ºÍ³õÊ¼»¯µØÍ¼
+    initMap();//åˆ›å»ºå’Œåˆå§‹åŒ–åœ°å›¾
 </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 </html>
