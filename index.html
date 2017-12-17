@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>Bootstrap 101 Template</title>
 
@@ -61,10 +61,19 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse img-responsive">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">首页</a></li>
-                    <li><a href="#about"> 家具产品</a></li>
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">家具产品 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Restaurant-furniture.html">餐厅家具</a></li>
+                            <li><a href="Living-room-furniture.html">客厅家具</a></li>
+                            <li><a href="Bedroom-furniture.html">卧室家具</a></li>
+                            <li><a href="Study-furniture.html">书房家具</a></li>
+                            <li><a href="Children-furniture.html">儿童家具</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#contact">设计团队</a></li>
-                    <li><a href="#contact">关于我们</a></li>
+                    <li><a href="About-us/Company-profile.html">关于我们</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -114,11 +123,11 @@
            <ul>
                <li><a href="#" class="jiaju">家具产品</a>
                   <ul class="Furnitureproducts clear">
-                      <li><a href="#"><strong>餐厅家具</strong></a></li>
-                      <li><a href="#"><strong>客厅家具</strong></a></li>
-                      <li><a href="#"><strong>书房家具</strong></a></li>
-                      <li><a href="#"><strong>儿童家具</strong></a></li>
-                      <li><a href="#"><strong>卧室家具</strong></a></li>
+                      <li><a href="Restaurant-furniture.html"><strong>餐厅家具</strong></a></li>
+                      <li><a href="Living-room-furniture.html"><strong>客厅家具</strong></a></li>
+                      <li><a href="Study-furniture.html"><strong>书房家具</strong></a></li>
+                      <li><a href="Children-furniture.html"><strong>儿童家具</strong></a></li>
+                      <li><a href="Bedroom-furniture.html"><strong>卧室家具</strong></a></li>
                   </ul>
                </li>
            </ul>
@@ -126,9 +135,9 @@
        <!--结束家具产品-->
        <!--产品-->
        <div class="customModule_product">
-             <div class="container productimage">
+             <div class="container-fluid productimage ">
                  <div class="row ">
-                     <div class="col-lg-3 "><a href="#"><img class="product_border img-responsive" src="img/_7295831.jpg"></a>
+                     <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/_7295831.jpg"></a>
                          <div class="pic-attr">
                              <div class="pic-price">
                                   <span class="newPrice">
@@ -140,7 +149,7 @@
                              </h3>
                          </div>
                      </div>
-                     <div class="col-lg-3 "><a href="#"><img class="product_border img-responsive" src="img/_8159892.jpg"></a>
+                     <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/_8159892.jpg" ></a>
                          <div class="pic-attr">
                              <div class="pic-price">
                                   <span class="newPrice">
@@ -153,7 +162,7 @@
                          </div>
 
                      </div>
-                     <div class="col-lg-3 "><a href="#"><img class="product_border img-responsive" src="img/_1207073.jpg"></a>
+                     <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/_1207073.jpg"></a>
                          <div class="pic-attr">
                              <div class="pic-price">
                                   <span class="newPrice">
@@ -166,7 +175,7 @@
                          </div>
 
                      </div>
-                     <div class="col-lg-3 "><a href="#"><img class="product_border img-responsive" src="img/_693034.jpg"></a>
+                     <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/_693034.jpg"></a>
                          <div class="pic-attr">
                              <div class="pic-price">
                                   <span class="newPrice">
@@ -181,7 +190,7 @@
                      </div>
                  </div>
                  <div class="row ">
-                     <div class="col-lg-3 "><a href="#"><img class="product_border img-responsive" src="img/_6561787.jpg"></a>
+                     <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/_6561787.jpg"></a>
                          <div class="pic-attr">
                              <div class="pic-price">
                                   <span class="newPrice">
@@ -193,7 +202,7 @@
                              </h3>
                          </div>
                      </div>
-                     <div class="col-lg-3 "><a href="#"><img class="product_border img-responsive" src="img/_3221919.jpg"></a>
+                     <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/_3221919.jpg"></a>
                          <div class="pic-attr">
                              <div class="pic-price">
                                   <span class="newPrice">
@@ -206,7 +215,7 @@
                          </div>
 
                      </div>
-                     <div class="col-lg-3 "><a href="#"><img class="product_border img-responsive" src="img/_5791079.jpg"></a>
+                     <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/_5791079.jpg"></a>
                          <div class="pic-attr">
                              <div class="pic-price">
                                   <span class="newPrice">
@@ -219,7 +228,7 @@
                          </div>
 
                      </div>
-                     <div class="col-lg-3 "><a href="#"><img class="product_border img-responsive" src="img/_4188473.jpg"></a>
+                     <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/_4188473.jpg"></a>
                          <div class="pic-attr">
                              <div class="pic-price">
                                   <span class="newPrice">
@@ -239,7 +248,9 @@
        <div class="customModuleRowInner "  >
            <div class="col-lg-4 customModule" style="width:420px;">
                <div class="MoHead">
-                      <strong class="NameTxt"><a href="#">新闻公告</a></strong>
+                   <div class="MoName">
+                       <strong class="NameTxt"><a href="#">新闻公告</a></strong>
+                   </div>
                       <span class="MoMore clear"><a href="#">更多</a></span>
                </div>
                <div class="MoBody">
@@ -251,7 +262,7 @@
                </div>
            </div>
 
-           <div class="col-lg-8 customModule" style="width: 720px">
+           <div class="col-lg-8 customModule" style="width: 770px">
                <div class="MoHead">
                    <strong class="NameTxt"><a href="#">关于我们</a></strong>
                    <span class="MoMore clear"><a href="#">更多</a></span>
@@ -277,9 +288,12 @@
 
          <!-- 行业动态-->
             <div class="CModulePR">
-                <div class="col-lg-7 customhangye" style="width: 600px;height: 546px ">
+                <div class="col-lg-7 customModule" style="width: 600px;height: 546px ">
                     <div class="MoHead">
-                        <strong class="NameTxt"><a href="#">行业动态</a></strong>
+                        <div class="MoName">
+                            <strong class="NameTxt"><a href="#">行业动态</a></strong>
+                        </div>
+
                         <span class="MoMore clear"><a href="#">更多</a></span>
                     </div>
                     <div class="MoBody" style="margin-left: -40px">
@@ -325,7 +339,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-5 customtuandui" style="width: 562px;height: 550px">
+                <div class="col-lg-5 customModule" style="width: 590px;height: 550px">
                     <div class="MoHead">
                         <strong class="NameTxt"><a href="#">设计师团队</a></strong>
                         <span class="MoMore clear"><a href="#">更多</a></span>
@@ -366,7 +380,8 @@
         <!--家具实景-->
        <div class="customModule_jiajushijing">
              <div class="jjsj_title">
-                 <strong class="NameTxt"><a href="#">新闻公告</a></strong>
+
+                 <strong class="NameTxt"><a href="#">家具实景</a></strong>
                  <span class="MoMore clear"><a href="#">更多</a></span>
              </div>
              <div class="jjsj_body">

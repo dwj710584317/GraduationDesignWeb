@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <link rel="stylesheet" type="text/css" href="css/my-css.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/myjs.js" type="text/javascript" language="javascript"></script>
+</head>
+<body>
+<!--顶部菜单-->
+<div class="top_menu">
+    <!--<div class="top_menuBg"></div>-->
+    <div class="topBarArea">
+        <div class="top_menu_left clear">
+            <a href="#">登录</a>
+            <em>|</em>
+            <a href="#">免费注册</a>
+        </div>
+        <div class="top_menu_right clear">
+            <a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a>
+            <em>|</em>
+            <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a>
+            <em>|</em>
+            <a href="#">在线留言</a>
+            <em>|</em>
+            <a href="baidumap.html">企业位置</a>
+            <em>|</em>
+            <a href="#">手机站</a>
+        </div>
+    </div>
+</div>
+<!--结束顶部菜单-->
+<!-- Static navbar -->
+<div style="background: white">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="navbar-brand" src="img/logo.png">
+            </div>
+            <div id="navbar" class="navbar-collapse collapse img-responsive">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">家具产品 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Restaurant-furniture.html">餐厅家具</a></li>
+                            <li><a href="Living-room-furniture.html">客厅家具</a></li>
+                            <li><a href="Bedroom-furniture.html">卧室家具</a></li>
+                            <li><a href="Study-furniture.html">书房家具</a></li>
+                            <li><a href="Children-furniture.html">儿童家具</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">设计团队</a></li>
+                    <li><a href="About-us/Company-profile.html">关于我们</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">人才招聘</a></li>
+                            <li><a href="#">企业位置</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</div>
+<!--轮播图-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- 轮播指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <!-- /*<li data-target="#carousel-example-generic" data-slide-to="2"></li>*/-->
+    </ol>
+    <!--  图片区域 -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="http://aimg3.dlszywz.com/ev_user_module_content_tmp/2016_02_14/tmp1455427036_1062450_s.png" width="100%" alt="...">
+
+        </div>
+        <div class="item">
+            <img src="http://aimg3.dlszywz.com/ev_user_module_content_tmp/2016_02_14/tmp1455426794_1062450_s.png" width="100%" alt="...">
+        </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<!--主体-->
+<div class="customModule_product">
+    <div class="sj-customModuleRow ">
+        <div class="sf-customModuleRowInner">
+            <div class="sf-customModule">
+                 <strong class="sf-NameTxt">
+                     <span class="ContainerCrumbs">
+                           <b class="firstFont">
+                               <a href="index.html">首页</a>
+                               <em>>></em>
+                               <a href="Study-furniture.html">书房家具</a>
+                           </b>
+                     </span>
+                 </strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid productimage ">
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/sf_img/2683600_280303.jpg"></a>
+                <div class="pic-attr">
+
+                    <h3 class="pic-title">
+                        <a href="#">【原来生活】明式书桌两件套 非洲花梨木 实木书桌配官帽椅（不含软装）</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/sf_img/2683587_818289.jpg" ></a>
+                <div class="pic-attr">
+
+                    <h3 class="pic-title">
+                        <a href="#">【原来生活】新中式云纹系列云纹架几书桌椅两件套 新款书房桌椅 简约镂空精美云纹雕刻</a>
+                    </h3>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/sf_img/2683575_482290.jpg"></a>
+                <div class="pic-attr">
+
+                    <h3 class="pic-title">
+                        <a href="#">【原来生活】中式简约画案 非洲花梨木 原木打造条案书桌</a>
+                    </h3>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/sf_img/2683306_851657.jpg"></a>
+                <div class="pic-attr">
+
+                    <h3 class="pic-title">
+                        <a href="#">金天拓家具 欧式实木书桌 法式橡木电脑桌电脑台书房卧室桌子6201</a>
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/sf_img/2683288_242228.jpg"></a>
+                <div class="pic-attr">
+
+                    <h3 class="pic-title">
+                        <a href="#">【原来生活】中式简易书柜 书房实木书柜 非洲花梨木 实用储物 简约设计</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img\sf_img\2683276_113366.jpg"></a>
+                <div class="pic-attr">
+
+                    <h3 class="pic-title">
+                        <a href="#">【原来生活】中式实木三门雕花书柜 非洲花梨木 书房简洁书柜 带储物功能</a>
+                    </h3>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img\sf_img\2683249_243410.jpg"></a>
+                <div class="pic-attr">
+
+                    <h3 class="pic-title">
+                        <a href="#">【原来生活】中式平板书柜两件套 非洲花梨木 实木书柜</a>
+                    </h3>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/sf_img/2683211_378223.jpg"></a>
+                <div class="pic-attr">
+
+                    <h3 class="pic-title">
+                        <a href="#">【原来生活】中式小灯挂椅 实木椅 儿童椅 非洲花梨木 圆润边角 舒适靠背</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img/sf_img\2683190_172073.jpg"></a>
+                <div class="pic-attr">
+
+                    <h3 class="pic-title">
+                        <a href="#">【原来生活】中式雕花书柜组合 非洲花梨木 组合博古架书架三件套</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3"><a href="#"><img class="product_border img-responsive" src="img\sf_img\2683139_143019.jpg"></a>
+                <div class="pic-attr">
+
+                    <h3 class="pic-title">
+                        <a href="#">【原来生活】实木小方凳 非洲花梨木 简洁质朴 时光的味道 小四方矮凳儿童凳</a>
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--分页-->
+    <div class="page">
+        <div class="page_inner">
+            <span class="disabled">共有1页</span>
+            <span class="disabled">首页</span>
+            <span class="page-start">上一页</span>
+            <strong>1</strong>
+            <span class="page-end">下一页</span>
+            <span class="disabled">尾页</span>
+        </div>
+    </div>
+    <div class="footer" id="footer"   >
+        <div class="footerConArea">
+            <div class="footerCon">
+                <!--FOOTER NAV START-->
+                <div class="footerNav" id="footer_nav">
+                    <a href="#">关于我们</a> <em>|</em>
+                    <a href="#">经典案例</a> <em>|</em>
+                    <a href="#">新闻动态</a> <em>|</em>
+                    <a href="#">服务项目</a> <em>|</em>
+                    <a href="#">咨询团队</a> <em>|</em>
+                    <a href="#">联系我们</a>
+                </div>
+                <div class="copyright" id="copyright">
+                    <p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        Copyright &#169; 2014-2025,www.xxxxx.com,All rights reserved &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    <center id="c2"></center>
+                </div>
+                <!--COPYRIGHT START-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

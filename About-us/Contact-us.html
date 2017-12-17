@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <link rel="stylesheet" type="text/css" href="..\css\my-css.css">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script src="../js/myjs.js" type="text/javascript" language="javascript"></script>
+    <title>联系我们</title>
+    <!--引用百度地图API-->
+    <style type="text/css">
+        html,body{margin:0;padding:0;}
+        #dituContent{
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+<!--顶部菜单-->
+<div class="top_menu">
+    <!--<div class="top_menuBg"></div>-->
+    <div class="topBarArea">
+        <div class="top_menu_left clear">
+            <a href="#">登录</a>
+            <em>|</em>
+            <a href="#">免费注册</a>
+        </div>
+        <div class="top_menu_right clear">
+            <a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a>
+            <em>|</em>
+            <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a>
+            <em>|</em>
+            <a href="#">在线留言</a>
+            <em>|</em>
+            <a href="../baidumap.html">企业位置</a>
+            <em>|</em>
+            <a href="#">手机站</a>
+        </div>
+    </div>
+</div>
+<!--结束顶部菜单-->
+<!-- Static navbar -->
+<div style="background: white">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="navbar-brand" src="../img/logo.png">
+            </div>
+            <div id="navbar" class="navbar-collapse collapse img-responsive">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="../index.html">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">家具产品 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Restaurant-furniture.html">餐厅家具</a></li>
+                            <li><a href="../Living-room-furniture.html">客厅家具</a></li>
+                            <li><a href="../Bedroom-furniture.html">卧室家具</a></li>
+                            <li><a href="../Study-furniture.html">书房家具</a></li>
+                            <li><a href="../Children-furniture.html">儿童家具</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">设计团队</a></li>
+                    <li><a href="About-us/Company-profile.html">关于我们</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">人才招聘</a></li>
+                            <li><a href="#">企业位置</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</div>
+
+
+<!--主体-->
+<div class="mainContainer" style="background-color: #0f0f0f">
+    <div class="Company-profile">
+        <div class="CModulePC">
+            <div class="CModulePCLeft PCLeft" style="width:270px;">
+                <div class="gy-customModule" style="width: 260px;">
+                    <div class="MoHeadM">
+                        <strong class="NameTxt">
+                            <a>关于我们</a>
+                        </strong>
+                    </div>
+                    <div class="sidebarLists " style="width: 260px;">
+                        <dl class="oneClassList">
+                            <dt class="oneClassT  ">
+                            <div class="oneClassTinner">
+                                <span class="glyphicon glyphicon-chevron-right clear"></span>
+                                <a href="../About-us/Company-profile.html" class="clear">公司简介</a>
+
+                            </div>
+                            </dt>
+                            <dt class="oneClassT" >
+                            <div class="oneClassTinner">
+                                <span class="glyphicon glyphicon-chevron-right clear"></span>
+                                <a href="../About-us/corporate-culture.html" class="clear">企业文化</a>
+
+                            </div>
+                            </dt>
+
+                            <dt class="oneClassT" style="background-color: #f5f5f5">
+                            <div class="oneClassTinner">
+                                <span class="glyphicon glyphicon-chevron-right clear"></span>
+                                <a href="../About-us/Contact-us.html" class="clear">联系我们</a>
+
+                            </div>
+                            </dt>
+
+                        </dl>
+                    </div>
+
+                    <div class="customModule" style="width: 260px;height: 237px;margin: 0">
+                        <div class="Mo" style="height: 235px;width: 258px;" >
+                            <div class="MoHeadM">
+                                <strong class="NameTxt">
+                                    <a>联系我们</a>
+                                </strong>
+                            </div>
+                            <div class="customModule" style="width:260px; height:237px;">
+                                <div class="MoBodyM">
+                                    <div class="MoBodyC" style="width:230px; height:200px;">
+                                        <ul class="lxwm">
+                                            <li>
+                                                <div class="lxwm-inner">
+                                                    <a class="lxwm-pics">
+                                                                  <span class="lxwm-pic" style="width:20px; height:20px;">
+                                                                      <img src="http://aimg8.dlszywz.com/module_pic_con/800_1500/462/923708_7481161.png?x-oss-process=image/resize,m_lfit,w_20,h_20,limit_0">
+                                                                  </span>
+                                                    </a>
+                                                    <div class="pic-attr">
+                                                        <p>北京XXXXX有限公司</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="lxwm-inner">
+                                                    <a class="lxwm-pics">
+                                                                  <span class="lxwm-pic" style="width:20px; height:20px;">
+                                                                      <img src="http://aimg8.dlszywz.com/module_pic_con/800_1500/462/923685_9388913.png?x-oss-process=image/resize,m_lfit,w_20,h_20,limit_0">
+                                                                  </span>
+                                                    </a>
+                                                    <div class="pic-attr">
+                                                        <p>传真：010-88888888-800</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="lxwm-inner">
+                                                    <a class="lxwm-pics">
+                                                                  <span class="lxwm-pic" style="width:20px; height:20px;">
+                                                                      <img src="http://aimg8.dlszywz.com/module_pic_con/800_1500/462/923683_1695820.png?x-oss-process=image/resize,m_lfit,w_20,h_20,limit_0">
+                                                                  </span>
+                                                    </a>
+                                                    <div class="pic-attr">
+                                                        <p>客户热线：4000-000-000</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="lxwm-inner">
+                                                    <a class="lxwm-pics">
+                                                                  <span class="lxwm-pic" style="width:20px; height:20px;">
+                                                                      <img src="http://aimg8.dlszywz.com/module_pic_con/800_1500/462/923682_3701396.png?x-oss-process=image/resize,m_lfit,w_20,h_20,limit_0">
+                                                                  </span>
+                                                    </a>
+                                                    <div class="pic-attr">
+                                                        <p>地址：北京市海淀区XXX大街XX号XX大厦X座XXX室</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="CModulePCLeft PCRight" style="width:930px; height: 617px">
+                <div class="customModule">
+                    <div class="Mo cusMo_18" style="width:930px; "data-classname="cusMo_18">
+                        <div class="MoHeadM ">
+                            <strong class="CModulePCLeft-NameTxt">
+                                <a href="#">企业文化</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="articleDetails">
+                        <!--百度地图容器-->
+                        <div style="width:535px;height:344px;border:#ccc solid 1px;float: left" id="dituContent"></div>
+                        <div class="customModule" style="width:260px; height:237px;">
+                            <div class="MoBodyM">
+                                <div class="MoBodyC" style="width:230px; height:200px;">
+                                    <ul class="lxwm">
+                                        <li>
+                                            <div class="lxwm-inner">
+
+                                                <div class="pic-attr">
+                                                    <p>北京XXXXX有限公司</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lxwm-inner">
+
+                                                <div class="pic-attr">
+                                                    <p>传真：010-88888888-800</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lxwm-inner">
+
+                                                <div class="pic-attr">
+                                                    <p>客户热线：4000-000-000</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lxwm-inner">
+
+                                                <div class="pic-attr">
+                                                    <p>邮编：310053</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lxwm-inner">
+
+                                                <div class="pic-attr">
+                                                    <p>地址：北京市海淀区XXX大街XX号XX大厦X座XXX室</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer" id="footer"   >
+    <div class="footerConArea">
+        <div class="footerCon">
+            <!--FOOTER NAV START-->
+            <div class="footerNav" id="footer_nav">
+                <a href="#">关于我们</a> <em>|</em>
+                <a href="#">经典案例</a> <em>|</em>
+                <a href="#">新闻动态</a> <em>|</em>
+                <a href="#">服务项目</a> <em>|</em>
+                <a href="#">咨询团队</a> <em>|</em>
+                <a href="#">联系我们</a>
+            </div>
+            <div class="copyright" id="copyright">
+                <p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    Copyright &#169; 2014-2025,www.xxxxx.com,All rights reserved &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                <center id="c2"></center>
+            </div>
+            <!--COPYRIGHT START-->
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(120.164387,30.176232);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+
+    initMap();//创建和初始化地图
+</script>
+
+
+</html>

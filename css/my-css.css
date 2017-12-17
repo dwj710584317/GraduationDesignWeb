@@ -1,6 +1,6 @@
 
 
-
+/*清除浮动*/
 .clear:after{display:block;clear:both;content:".";
     visibility:hidden;height:0}
 .clear{zoom:1}
@@ -67,14 +67,14 @@
 .top_menu{
     background-color: #565656;
     width: 100%;
+    margin: 0 auto;
     height: 30px;
     line-height: 30px;
 }
 .topBarArea{
-    width: 1200px;
+    width: 1220px;
     margin: 0 auto;
-    line-height: 30px;
-    height: 30px;
+
     padding: 0;
 }
 .top_menu_left{
@@ -94,7 +94,6 @@
 }
 
 .customModule_product{
-
     margin: 0 auto;
     width: 1200px;
 
@@ -147,24 +146,31 @@
 .customModule{
 
     float: left;
-    margin-left: 20px;
-    width: 420px;
+
     height: 473px;
 }
 .MoHead{
+    width: 100%;
+    height: 35px;
     border-bottom: 2px solid #d6002a;
+}
+.NameTxt{
+    font-size: 14px;
 }
 
 .NameTxt a{
-    font-weight: 100;
-    font-size: 17px;
+
+    font-size: 14px;
     font-family: 微软雅黑;
     text-decoration: none;
     color: #0f0f0f;
 
 }
+.MoName{
+    float: left;
+}
 .MoMore{
-
+    margin-top: 10px;
     text-align: center;
     width: 55px;
     height: 25px;
@@ -224,7 +230,7 @@
     color: #666666;
 }
 
-
+/*行业动态*/
 
 .CModulePR{
 
@@ -232,9 +238,7 @@
     height: 550px;
     margin: 0 auto;
 }
-.customhangye{
-    margin-left: 18px;
-}
+
 
 .hangyedongtai li{
     padding-top: 1px;
@@ -270,7 +274,7 @@
     font-size: 12px;
     color: #666;
 }
-
+/*设计团队*/
 .sjtdul{
     padding: 0px;
 }
@@ -304,11 +308,11 @@
     display: block;
 }
 
-
+/*家具实景*/
 .customModule_jiajushijing{
 
     padding-top: 30px;
-    width: 1200px;
+    width: 1220px;
     margin: 0 auto;
 }
 .jjsj_title{
@@ -375,3 +379,307 @@
      text-decoration: none;
      color: #d6002a;
 }
+
+
+.page .page_inner {
+    font-size: 0;
+    color: #0f0f0f;
+    overflow: hidden;
+    text-align: right;
+    padding: 10px 5px;
+    clear: both;
+}
+
+.page span {
+    cursor: not-allowed;
+    border-color: #DDD;
+    color: #AAA;
+    background-color: #FFF;
+}
+
+
+.page a:hover, .page strong {
+    color: #FFF;
+    background-color: #DD143E;
+    border-color: #DD143E;
+}
+.page a {
+    transition-property: border-color,background-color,color;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    border-color: #BBB;
+    color: #666;
+    background-color: #FFF;
+}
+.page a, .page b, .page span, .page strong {
+    display: inline-block;
+    margin-left: 5px;
+    border-width: 1px;
+    border-style: solid;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Microsoft Yahei';
+    padding: 5px 10px;
+}
+
+/*书房家具 卧室家具 儿童家具 餐厅家具 客厅家具  当前目录*/
+.ContainerCrumbs {
+    display: block;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+.sf-customModule{
+    margin-left: 15px;
+}
+.ContainerCrumbs em {
+    color: #BD1337;
+    margin: 0 5px;
+    font-style: normal;
+}
+.sf-NameTxt,.sf-NameTxt a{
+    color: #BD1337;
+}
+.sf-NameTxt {
+    padding-top: 10px;
+    white-space: nowrap;
+    display: block;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    margin: 0;
+}
+strong, b {
+    font-weight: bold;
+}
+
+
+/*关于我们*/
+.Company-profile{
+    margin: 0 auto;
+    width: 1200px;margin-top: 30px;
+
+}
+.mainContainer{
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    clear: both;
+}
+
+.CModulePCLeft{
+
+    float: left;
+    zoom: 1;
+}
+.gy-customModule{
+    width: 260px;
+    float: left;
+    margin: 0 10px 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.MoHeadM {
+    background-color: #f5f5f5;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    height:53px;
+    line-height: 53px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #ededed;;
+
+}
+.NameTxt {
+    margin-top: 20px; margin-right: 0px;
+    margin-bottom: 20px;margin-left: 0px;
+}
+.NameTxt a {
+    text-decoration: none;
+    cursor: pointer;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 24px;
+    color: #555555;
+    font-weight: 400;
+}
+
+
+ .sidebarLists{
+     margin-top: 10px;
+ }
+.sidebarLists dl dt{
+    background-color: white;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 10px;
+    border: 1px solid #ededed;;
+}
+.oneClassTinner a{
+    display: block;
+    float: left;
+    margin-left: 20px;
+    font-family: 微软雅黑;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;font-size: 16px;
+    color: #888888;
+}
+.oneClassTinner>span{
+    margin-right: 20px;
+    float: right;
+    height: 60px;
+    line-height: 60px;
+}
+.oneClassList dt:hover {
+    background-color: #f5f5f5;
+}
+
+.Mo>.MoHeadM a{
+    margin-left: 20px;
+    float: left;
+    font-size: 18px;
+}
+.Mo ,.PCRight {
+    border-right-style: solid;
+}
+.Mo ,.PCRight {
+    border-right-width: 1px;
+}
+.Mo ,.PCRight {
+    border-right-color: #ededed;
+}
+.Mo ,.PCRight {
+
+    border-left-style: solid;
+}
+.Mo ,.PCRight {
+
+    border-left-width: 1px;
+}
+.Mo ,.PCRight {
+
+    border-left-color: #ededed;
+}
+.Mo ,.PCRight {
+
+    border-bottom-style: solid;
+}
+.Mo ,.PCRight {
+
+    border-bottom-width: 1px;
+}
+.Mo ,.PCRight {
+
+    border-bottom-color: #ededed;
+}
+.Mo ,.PCRight {
+
+    border-top-style: solid;
+}
+.Mo ,.PCRight {
+
+    border-top-width: 1px;
+}
+.Mo ,.PCRight {
+
+    border-top-color: #ededed;
+}
+.Mo ,.PCRight {
+
+    border-color: #E0DFDD;
+}
+.Mo {
+    position: relative;
+    overflow: hidden;
+    border-width: 1px;
+    /* border-style: solid; */
+}
+.MoBodyM {
+    background-color: #FFF;
+}
+
+.MoBodyC {
+    margin: 5px;
+    overflow: hidden; color: #666; margin-bottom: 0px; margin-top: 15px;margin-right: 10px; margin-left: 18px;margin-top: 0px;
+    position: relative;
+}
+
+.lxwm {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.lxwm li{
+    height:33px;
+    line-height: 33px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    list-style-type: none;
+}
+
+.lxwm-inner {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 3px;
+    margin-top: 0px;
+    border-color: #CCC;
+    padding: 5px 0;
+
+}
+.lxwm-pics {
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    font-size: 0;
+
+    display: block;
+}
+
+.pic-attr p{
+    font-weight: 400;
+}
+
+ .cusMo_18 .MoHeadM {
+     width: 100%;
+     padding-left: 44%;
+     text-align: center;
+     background-position: center center;background-repeat: no-repeat;
+     background-image: url(http://aimg8.dlszywz.com/ev_user_module_content_tmp/2016_09_29/tmp1475135784_1303390_s.png);
+}
+.CModulePCLeft-NameTxt{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.CModulePCLeft-NameTxt a{
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    color: #555555;
+    text-decoration: none;
+}
+.articleDetails img{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*企业文化*/
+.articleDetails{
+
+    font-size: 14px;
+}
+
+/*商品详情页*/
